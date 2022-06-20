@@ -1,0 +1,52 @@
+.download-arrow {
+	position: absolute;
+	width: 160px;
+	left: 10px;
+	bottom: 150px;
+	padding: 11px 25px 32px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #3683F7;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
+	opacity: 0;
+	transform: translateY(-100%);
+	-moz-transform: translateY(100%);
+
+	transition: transform, opacity, 0.7s ease;
+}
+
+.download-arrow::after {
+	position: absolute;
+	left: 0;
+	bottom: -80px;
+	content: "";
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-top: 80px solid #3683F7;
+}
+
+@-moz-document url-prefix() {
+  .download-arrow {
+		left: auto;
+		bottom: auto;
+		right: 10px;
+		top: 150px;
+  }
+}
+
+.open {
+	font-family: 'Bebas Neue';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 72px;
+}
+
+.show {
+	opacity: 1.0;
+	transform: translateY(0);
+}

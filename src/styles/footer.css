@@ -1,0 +1,13 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	height: 70px;
+}
+
+.copy {
+	font-size: 14px;
+	font-weight: 400;
+}

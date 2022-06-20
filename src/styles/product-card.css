@@ -1,0 +1,89 @@
+.products__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.products__item {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.amount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 240px;
+	height: 100px;
+	font-family: "Bebas Neue", sasn-serif;
+	font-size: 48px;
+	background-color: #fff;
+	line-height: 48px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	transform: translateY(50%);
+
+	z-index: 10;
+}
+
+.amount-per {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.best::after {
+	position: absolute;
+	content: "Best Value";
+	font-family: "Roboto", sans-serif;
+	height: max-content;
+	padding: 4px;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+	line-height: 12px;
+	background-color: #ffb800;
+}
+
+.percent50off::after {
+	content: "50% OFF";
+	color: #fff;
+	font-weight: 400;
+	background: linear-gradient(78.49deg, #E40210 9.1%, #7B0022 14.73%, #FF0000 44.13%, #FF0505 52.57%, #FF1313 62.5%, #FF2B2B 73.13%, #FF3131 75.5%, #F40106 93.58%);
+}
+
+.product-info {
+	width: 360px;
+	height: 220px;
+	padding: 70px 0 0;
+	background-color: #f3f5f6;
+
+	z-index: 5;
+}
+
+.product-name {
+	margin: 0;
+	font-weight: 300;
+}
+
+.product-license {
+	font-weight: 700;
+}
+
+.download-button {
+	display: block;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 30px 70px;
+	padding: 15px;
+	border-radius: 25px;
+	color: #fff;
+	background: linear-gradient(0deg, #130999 -0.01%, #174D8F 35.01%, #1A7F87 64.91%, #1C9E83 87.44%, #1DAA81 99.99%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
