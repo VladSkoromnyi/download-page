@@ -43,7 +43,10 @@ const getElements = (products) => {
 						class="download-button"
 						onclick="downloadArrow()"
 					>
-						Download 
+						<span>
+							Download
+						</span>
+						<img src="./icons/download.svg" alt="download" />
 					</a>
 				</div>
 			</li>
