@@ -5,6 +5,13 @@
 	gap: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+	.products__list {
+		flex-direction: column;
+		margin-bottom: 100px;
+	}	
+}
+
 .products__item {
 	text-align: center;
 	display: flex;
@@ -72,7 +79,10 @@
 }
 
 .download-button {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
@@ -81,7 +91,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	margin: 30px 70px;
-	padding: 15px;
+	padding: 10px 15px;
 	border-radius: 25px;
 	color: #fff;
 	background: linear-gradient(0deg, #130999 -0.01%, #174D8F 35.01%, #1A7F87 64.91%, #1C9E83 87.44%, #1DAA81 99.99%);
