@@ -5,6 +5,8 @@
 	right: 0;
 	background-color: #000;
 	height: 50px;
+
+	z-index: 15;
 }
 
 .main-title {
