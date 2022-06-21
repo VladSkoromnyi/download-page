@@ -14,8 +14,6 @@ const getElements = (products) => {
 	const productList = document.querySelector('.products__list');
 
 	for (const key in products) {
-		console.log(products[key]);
-
 		productList.innerHTML += `
 			<li class="products__item">
 				<div 
